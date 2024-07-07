@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quản lí nhân viên API</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Bài tập quản lí người dùng MOVIE</h2>
+            <!-- Vùng form nhập dữ liệu tạo mới người dùng -->
+            <div class="nguoiDung_form mb-5">
+                <form action="" id="QLND_form">
+                    <div class="row">
+                        <!-- Tài khoản -->
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label"
+                                    >Tài khoản</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="taiKhoan"
+                                    aria-describedby="helpId"
+                                    placeholder="Vui lòng nhập tài khoản"
+                                />
+                            </div>
+                        </div>
+                        <!-- Họ tên -->
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">họ tên</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="hoTen"
+                                    aria-describedby="helpId"
+                                    placeholder="Vui lòng nhập Họ tên"
+                                />
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">Email</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="email"
+                                    aria-describedby="helpId"
+                                    placeholder="Vui lòng nhập email"
+                                />
+                            </div>
+                        </div>
+                        <!-- SDT -->
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="" class="form-label">SDT</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="soDT"
+                                    aria-describedby="helpId"
+                                    placeholder="Vui lòng nhập số điện thoại"
+                                />
+                            </div>
+                        </div>
+                        <!-- Mật khẩu -->
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="" class="form-label"
+                                    >Mật khẩu</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name=""
+                                    id="matKhau"
+                                    aria-describedby="helpId"
+                                    placeholder="Vui lòng nhập mật khẩu"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-dark">
+                                Thêm người dùng
+                            </button>
+                            <button class="btn btn-primary">Cập nhật</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Hiển thị dữ liệu người dùng từ backend -->
+            <div class="nguoiDung_table">
+                <div class="table-responsive-lg">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tài khoản</th>
+                                <th scope="col">Họ tên</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Số điện thoại</th>
+                                <th scope="col">Loại user</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="nguoiDung_tbody">
+                            <!-- <tr class="">
+                                <td scope="row">R1C1</td>
+                                <td>R1C2</td>
+                                <td>R1C3</td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row">Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+            integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
